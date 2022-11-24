@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    .wrapper{
+        position: fixed;
+        background: grey;
+        width: 200px;
+        left: -200px;
+        height: 200px;
+    }
+    #menu{
+        position: absolute;
+        width: 30px;
+        left: 200px;
+        height: 200px;
+        background: grey;
+    }
+    p{
+        transform: rotate(90deg);
+        width: 100px;
+        margin: 70px -40px;    
+       
+    }
+    ul{
+        padding: 20px;
+    }
+    .wrapper:hover{
+        left: 0px; 
+    }
+   </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="menu"> 
+            <p>MAIN MENU</p>
+        </div>
+        <ul>
+            <li>HOME</li>
+            <li>CONTACTS</li>
+            <li>OUR TEAM</li>
+            <li>FAQ</li>
+            <li>ABOUT</li>
+            <li>NEWS</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

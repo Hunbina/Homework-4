@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .citation{
+            box-sizing: border-box;
+            width: 600px;
+            height: 600px;
+            position: absolute;
+            background-color: #0d5825;
+            text-align: center;
+        }
+        p{
+            font-size:25px;
+            padding: 30px;
+        }
+        #card1, #card2, #card3{
+            position: absolute;
+            width: 150px;
+        }
+        #card1{
+            top: 50%;
+            left: 40%;
+            transform: translate(-50%,-50%) rotate(-25deg);
+        }
+        #card2{ 
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%) rotate(-10deg);
+        }
+        #card3{
+            top: 50%;
+            left: 60%;
+            transform: translate(-50%,-50%) rotate(5deg);
+        }
+        #card1:hover{
+            top: 45%;
+            left: 40%;
+            transform: translate(-50%,-50%) rotate(-25deg);
+        }
+        #card2:hover{
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%,-50%) rotate(-10deg);
+        }
+        #card3:hover{
+            top: 45%;
+            left: 60%;
+            transform: translate(-50%,-50%) rotate(5deg);
+        }
+    </style>
+    <style>
+        .wrapper {
+            position: relative;
+            float:right;
+            box-sizing: border-box;
+            width: 600px;
+            height: 600px;
+            
+        }
+        .squarered, .squaregreen, .squareviolet{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+
+        }
+        .squarered{
+            background-color: coral;
+            top: 40%;
+            left: 40%;
+            transform: translate(-50%,-50%);
+            z-index: 1;
+
+        }
+        .squareviolet{
+            background-color: rgb(143, 95, 255);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 3;
+        }
+        .squaregreen{
+            background-color: rgb(80, 255, 162);
+            top: 60%;
+            left: 60%;
+            transform: translate(-50%,-50%);
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="citation">
+        <p><q><strong> Доля тасує карти, а ми ними граємо.</strong></q>
+        <br><cite>Артур Шопенгауер</cite></p>
+        <img id="card1" src="img/card.png" alt="card">
+        <img id="card2" src="img/card.png" alt="card">
+        <img id="card3" src="img/card.png" alt="card">
+    </div>
+    <div class="wrapper">
+        <div class="squarered"></div>
+        <div class="squareviolet"></div>
+        <div class="squaregreen"></div>
+    </div>
+    
+</body>
+</html>
